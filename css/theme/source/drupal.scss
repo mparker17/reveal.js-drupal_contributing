@@ -1,0 +1,63 @@
+/**
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:500);
+@import url(http://fonts.googleapis.com/css?family=Alegreya:400,400italic);
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+// Drupal colours, from https://www.drupal.org/node/1051644
+$zeroary_white:          #FFFFFF;
+$primary_dark_blue:      #0678BE;
+$primary_light_blue:     #53B0EB;
+$primary_lime_green:     #96BC44;
+$secondary_navy_blue:    #064771;
+$secondary_light_navy:   #0D7DC1;
+$secondary_pale_gray:    #F6F6F2;
+$secondary_light_yellow: #E6FCB6;
+$secondary_grey:         #666666;
+$secondary_black:        #222222;
+$messages_green:         #D4EFCC;
+$messages_orange:        #FFE69F;
+$messages_red:           #EBCCCC;
+
+// Override theme settings (see ../template/settings.scss)
+$headingFont: 'Fira Sans', sans-serif;
+$headingColor: $secondary_navy_blue;
+$headingTextShadow: none;
+$heading1Size: 2.11em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+$mainFont: 'Alegreya', serif;
+$mainColor: $secondary_black;
+
+$backgroundColor: $zeroary_white;
+
+$linkColor: $primary_dark_blue;
+$linkColorHover: lighten( $linkColor, 20% );
+
+$selectionBackgroundColor: $primary_light_blue;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
