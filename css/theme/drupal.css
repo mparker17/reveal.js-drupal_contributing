@@ -296,3 +296,12 @@ body {
   color: #0678BE; }
 
 /*# sourceMappingURL=drupal.css.map */
+
+/*********************************************
+ * MATT'S CUSTOM STYLES.
+ *********************************************/
+ul li {
+  -webkit-break-inside: avoid;
+  -moz-break-inside: avoid;
+  break-inside: avoid;
+}
