@@ -300,8 +300,18 @@ body {
 /*********************************************
  * MATT'S CUSTOM STYLES.
  *********************************************/
-ul li {
-  -webkit-break-inside: avoid;
-  -moz-break-inside: avoid;
+.reveal {
+  font-size: 34px;
+}
+.reveal li {
   break-inside: avoid;
+  padding: 0.5rem;
+}
+.reveal ul.inline-list li {
+  display: inline;
+  list-style: none;
+  padding: 0;
+}
+.reveal ul.inline-list li:before {
+  content: '• ';
 }
