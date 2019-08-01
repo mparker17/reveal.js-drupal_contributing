@@ -8,34 +8,34 @@
   </head>
   <body>
     <section>
-      <h1>1/11: 1st Time Contributing to Drupal</h1>
-      Recommend you go online and find it now; there's lots of handy links.
+      <h1>1/13: 1st Time Contributing to Drupal</h1>
+      <p>Recommend you go online and find it now; there's lots of handy links.</p>
     </section>
     <section>
-      <h1>2/11: Who am I?</h1>
+      <h1>2/13: Who am I?</h1>
       <ul>
         <li>WSC: part of Environment Canada that monitors, stores, and disseminates water level, streamflow and sediment flow data for various lakes and rivers around Canada.</li>
         <li>Versabanq is a subsidiary of the Pacific and Western Bank of Canada.</li>
       </ul>
     </section>
     <section>
-      <h1>3/11: What do I know about contributing to Drupal?</h1>
+      <h1>3/13: What do I know about contributing to Drupal?</h1>
     </section>
     <section>
-      <h1>4/11: Other notable things</h1>
+      <h1>4/13: Other notable things</h1>
     </section>
     <section>
-      <h1>5/11: Why get involved?</h1>
+      <h1>5/13: Why contribute?</h1>
       <ul>
-        <li>This is probably review: you wouldn't be listening to me talk if you didn't already know why you wanted to contribute to Drupal.</li>
-        <li>That being said, you'll have to interact with others in the community; understanding some of their reasons might make things easier.</li>
+        <li>You might not know what you want to work on, or why you want to contribute, and that's OK.</li>
+        <li>You'll have to interact with others in the community; understanding some of their reasons might make things easier.</li>
         <li>Note that people contribute to open-source software for reasons which range from selfish to altruistic; many lie somewhere in between.</li>
         <li>I'm not going to judge you by your motivations for contributing.</li>
         <li>Whatever your reasons are, keep in mind that Drupal has a code of conduct, which says: (1) "be considerate", (2) "be respectful", (3) "be collaborative", (4) "when we disagree, consult others", (5) "when unsure, ask for help", and (6) "step down considerately".</li>
       </ul>
     </section>
     <section>
-      <h1>6/11: How can I help?</h1>
+      <h1>6/13: How can I help?</h1>
       <ul>
         <li>I can't emphasize this enough: there is <em>way</em> more to contributing to Drupal than writing code.</li>
         <li>Support others:
@@ -145,18 +145,27 @@
       </ul>
     </section>
     <section>
-      <h1>7/11: When should I contribute?</h1>
-      <ul>
-        <li>Volunteer: If you're working on something, it'll make it easier for others to understand and pick up from where you left off if: (a) you document what you're doing somewhere (issue queue, Googledoc, blog, etc.), and (b) if you upload your work thus far when you stop work.</li>
-        <li>Employer: There's no harm in asking your employer if they're willing to let you contribute on company time! Use some of the motivations from the previous slides!</li>
-        <li>If you developed something new, and your company / client paid you to do so, then you should ask their permission first. Otherwise, they might feel that you're taking something they paid money for and giving it to their competitors.</li>
-        <li>Some companies add clauses to their contracts to make it clear when the code they write could be contributed to the community. Some go as far as stating that all of the code they produce is a certain license.</li>
-        <li>Especially if you're new to contributing, doing some of the contribution work on your own time will help make yourself and your employer/client feel that less time is being wasted.</li>
-        <li>In my experience, the more contribution practice you get, the easier it gets to identify what can be contributed, and the more contribution time you can bill.</li>
-      </ul>
+      <h1>7/13: Issue queues</h1>
+      <p>Members of the Drupal community collaborate to solve problems in things we call issue queues.</p>
+      <p>An issue queue is just a list of things that need to be addressed for a given projects. It's analagous to things like JIRA, Redmine, Bugzilla, Trello, etc.</p>
+      <p>If you're familiar with Drupal terminology, it might be helpful to know that Drupal.org runs Drupal 7. An issue is just a node of type "issue"; and an issue queue is just a node of type "project". An entity reference field relates an issue to an project.</p>
+      <p>People collaborate by leaving comments on issues.</p>
+      <p>I encourage you to check out the guide; but we'll go over some of the metadata next.</p>
     </section>
     <section>
-      <h1>8/11: Attributing your contributions</h1>
+      <h1>8/13: Issue Metadata</h1>
+      <p>This is a screenshot of the issue metadata on an issue. Custom code moves the node's "Edit form" into the "Add New Comment" form.</p>
+      <p>Title is a really short summary of the issue. It's also the page title.</p>
+      <p>Project is the entity reference field that determines which queue the issue is in. Note that an issue can start in one queue and be moved to another queue before being closed.</p>
+      <p>Category is the type of issue: Plan, Task, Bug report, Feature request, or Support request.</p>
+      <p>Priority is how important the issue is. Note this is different from how important the issue is to you. For the most part, only the project lead / maintainer changes this.</p>
+      <p>Status is where the issue is in its lifecycle. New issues start out as "Active". Once a path forward has been determined, it moves to "Needs Work". When a fix has been proposed (usually a patch), it moves to "Needs Review". Someone else (not the person who proposed the fix or wrote the patch) reviews and replies with feedback; the issue either moves back into "Needs Work" if it needs work; or if it seems to be good, moves to "Reviewed and Tested by the Community" (RTBC). Issues in RTBC are reviewed by the project maintainer, and either marked Fixed, or bumped back to Needs Work. After an issue has been fixed for 2 weeks with no more activity, it gets Closed. There are some other statuses with specific purposes; but that's the basics.</p>
+      <p>Component is an arbitrary "section" of the project. There are a few default ones but project maintainers can add new ones or delete the existing ones.</p>
+      <p>Assigned allows you to assign it to yourself; and if you see an issue that is assigned, it's polite not to work on it. As a consequence, you shouldn't leave it assigned to yourself if you're not actively working on it, because that ties up the issue for months if you forget.</p>
+      <p>Issue tags are additonal ways of categorizing issues, like to say that it's good for a Novice to work on. Don't add arbitrary tags here: the Drupal.org webmasters or senior members should be the only ones adding tags.</p>
+    </section>
+    <section>
+      <h1>9/13: Attributing your contributions</h1>
       <ul>
         <li>Not all of your contributions will be through the issue queue, but if you happen to be using it...</li>
         <li>This also provides more incentive for your employer and/or client: they get credit in the issue, on their organization page, and soon, in the commit message.</li>
@@ -169,7 +178,18 @@
       </ul>
     </section>
     <section>
-      <h1>9/11: Where do I contribute?</h1>
+      <h1>10/13: When should I contribute?</h1>
+      <ul>
+        <li>Volunteer: If you're working on something, it'll make it easier for others to understand and pick up from where you left off if: (a) you document what you're doing somewhere (issue queue, Googledoc, blog, etc.), and (b) if you upload your work thus far when you stop work.</li>
+        <li>Employer: There's no harm in asking your employer if they're willing to let you contribute on company time! Use some of the motivations from the previous slides!</li>
+        <li>If you developed something new, and your company / client paid you to do so, then you should ask their permission first. Otherwise, they might feel that you're taking something they paid money for and giving it to their competitors.</li>
+        <li>Some companies add clauses to their contracts to make it clear when the code they write could be contributed to the community. Some go as far as stating that all of the code they produce is a certain license.</li>
+        <li>Especially if you're new to contributing, doing some of the contribution work on your own time will help make yourself and your employer/client feel that less time is being wasted.</li>
+        <li>In my experience, the more contribution practice you get, the easier it gets to identify what can be contributed, and the more contribution time you can bill.</li>
+      </ul>
+    </section>
+    <section>
+      <h1>11/13: Where do I contribute?</h1>
       <ul>
         <li>The Drupal.org issue queues are where specific code and design tasks end up:
           <ul>
@@ -192,7 +212,7 @@
       </ul>
     </section>
     <section>
-      <h1>10/11: Barriers</h1>
+      <h1>12/13: Frequently mentioned contribution barriers</h1>
       <ul>
         <li>Experience:
           <ul>
@@ -282,7 +302,7 @@
       </ul>
     </section>
     <section>
-      <h1>11/11: Thanks!</h1>
+      <h1>13/13: Thanks!</h1>
       Extra special thanks to all of you for contributing to the Drupal community by coming out to this event!
     </section>
   </body>
